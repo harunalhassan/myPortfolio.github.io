@@ -18,7 +18,7 @@
         }
 
         .px-4 {
-            padding-top: 250px !important;
+            padding-top: 250px;
         }
 
         .heroes::before {
@@ -31,19 +31,25 @@
             opacity: 100%;
             
         }
-        @media only screen and (min-width:760px) {
+        @media only screen and (max-width:500px) {
             .heroes::before {
             content: "";
             position: absolute;
             background: url('./img/bg1.jpg') no-repeat center center/cover;
-            height: 140%;
-            width: 760px;
+            height: 65%;
             z-index: -2;
             opacity: 100%;
+
+            
+        }
+        .px-4{
+            padding-top: 33px;
+        }
+            
             
         }
             
-        }
+        
         
 
         .text-body-emphasis {
@@ -68,6 +74,7 @@
         .end-logo {
             color: white;
         }
+        
     </style>
 </head>
 
